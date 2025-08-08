@@ -1,28 +1,21 @@
-import chromedriver_autoinstaller
-from selenium import webdriver
-from selenium.webdriver.chrome.options import Options
-import time
+# scraper.py
+import requests
+from bs4 import BeautifulSoup
+import re
 
 def get_price(url):
-    chromedriver_autoinstaller.install()  # Automatically installs correct driver
+    headers = {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+    }
 
-    options = Options()
-    options.add_argument("--headless")
-    options.add_argument("--disable-gpu")
-    options.add_argument("--no-sandbox")
-    options.add_argument('--disable-dev-shm-usage')
-    
-    driver = webdriver.Chrome(options=options)
-    driver.get(url)
-    time.sleep(5)
+    response = requests.get(url, headers=headers)
+    soup = BeautifulSoup(response.text, "html.parser")
 
-    try:
-        price_element = driver.find_element("xpath", '//div[contains(text(),"₹") or contains(text(),"₹")]/..')
-        price_text = price_element.text.replace("₹", "").replace(",", "").strip()
-        price = int(''.join(filter(str.isdigit, price_text)))
-    except Exception as e:
-        price = None
-        print("Error:", e)
-
-    driver.quit()
-    return price
+    price_tag = soup.find("div", {"class": "_30jeq3 _16Jk6d"})
+    if price_tag:
+        price_text = price_tag.text
+        # Extract numeric part
+        price = int(re.sub(r"[^\d]", "", price_text))
+        return price
+    else:
+        return None
