@@ -1,4 +1,25 @@
 {
-  "product_url": "https://www.flipkart.com/boat-nirvana-ion-anc-pro-w-hi-res-audio-ldac-anc-120-hrs-playback-multipoint-bluetooth/p/itma68b0b05ad459?pid=ACCH3Y28RVDZEZGX",
-  "target_price": 1800
+  "products": [
+    {
+      "name": "Monitor",
+      "url": "https://www.flipkart.com/benq-pd2705ua-68-58-cm-27-inch-4k-ultra-hd-led-backlit-ips-panel-srgb-rec-709-hdr10-aqcolor-technology-usb-c-factory-calibrated-color-mode-dualview-darkroom-animation-cad-cam-hotkey-puck-g2-kvm-ergo-arm-monitor-pd2705ua/p/itm5da87422d53a3?pid=MONHFEP6ZPKYNFXQ&lid=LSTMONHFEP6ZPKYNFXQX0LITU&marketplace=FLIPKART&store=6bo%2Fg0i%2F9no&srno=b_1_1&otracker=browse&otracker1=hp_rich_navigation_PINNED_neo%2Fmerchandising_NA_NAV_EXPANDABLE_navigationCard_cc_3_L2_view-all&fm=organic&iid=en_-SmEd-FVZOIv-FnaSQnLDXT2P9bfxjbNoM4sdHxbkXRWr0Hmsb57LqJIILrBVe_9lOmGv5qqbxsoOtzxRIHlQ_UFjCTyOHoHZs-Z5_PS_w0%3D&ppt=hp&ppn=homepage&ssid=se1pdmp5gg0000001758551055054",
+      "price_selector": "._30jeq3._16Jk6d, ._1_WHN1, .Nx9bqj.CxhGGd",
+      "title_selector": ".B_NuCI, ._35KyD6, .x-product-title-label",
+      "target_price": 8000
+    },
+    {
+      "name": "Smart Watch",
+      "url": "https://www.flipkart.com/cmf-nothing-watch-pro-2-1-32-amoled-auto-brightness-gesture-control-3d-warmup-guide-gps-smartwatch/p/itm51681954b749e?pid=SMWHFYQBHSTTJ8ER&lid=LSTSMWHFYQBHSTTJ8ERH0MVQK&marketplace=FLIPKART&q=smart+watches&store=ajy%2Fbuh&srno=s_1_1&otracker=AS_QueryStore_OrganicAutoSuggest_1_5_na_na_na&otracker1=AS_QueryStore_OrganicAutoSuggest_1_5_na_na_na&fm=organic&iid=en_uezU7yI--E84ZkRy5tT_B43OeSK0kmcXyEatrBFuSuZfC7vlra7sRmB95PQ6eQX79kK5MEPd97JGbORUiFu-aE4IsYyWu-Pj9cxFjFAoaLk%3D&ppt=pp&ppn=pp&ssid=ph9rwq4oqo0000001758551101612&qH=87968ec020b2016b",
+      "price_selector": "._30jeq3._16Jk6d, ._1_WHN1, .Nx9bqj.CxhGGd",
+      "title_selector": ".B_NuCI, ._35KyD6, .x-product-title-label",
+      "target_price": 2000
+    }
+  ],
+  "email": {
+    "sender_email": "your-email@gmail.com",
+    "app_password": "your-app-password",
+    "recipient_email": "recipient@gmail.com"
+  },
+  "check_interval_hours": 6,
+  "data_format": "both"
 }
